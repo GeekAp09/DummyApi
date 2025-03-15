@@ -5,7 +5,7 @@ const port = 3000;
 const app = express();
 
 // Load user data from data.json
-const userData = JSON.parse(fs.readFileSync("data.json", "utf-8"));
+const userData = JSON.parse(fs.readFileSync("./data.json", "utf-8"));
 
 app.get("/", (req, res) => {
   res.send("Hi, the server is working!");
